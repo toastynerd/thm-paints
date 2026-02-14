@@ -9,3 +9,11 @@ stop:
 	if [ -n "$$CONTAINER_ID" ]; then \
 		docker stop $$CONTAINER_ID; \
 	fi
+
+setup:
+	@echo "Setting up AWS Lightsail container service..."
+	@bash scripts/setup.sh
+
+publish:
+	@echo "Building and deploying thm-paints to AWS Lightsail..."
+	@bash scripts/deploy.sh

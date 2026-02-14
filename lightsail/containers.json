@@ -1,0 +1,11 @@
+{
+  "thm-paints": {
+    "image": ":thm-paints.latest",
+    "ports": {
+      "80": "HTTP"
+    },
+    "environment": {
+      "ENVIRONMENT": "production"
+    }
+  }
+}
